@@ -67,6 +67,8 @@ patas_product.psd: patas_product.psd
 patas_product/index.psd: patas_product.psd
 pedidos.jpg: pedidos.jpg
 pedidos/index.jpg: pedidos.jpg
+pedidos2.jpg: pedidos2.jpg
+pedidos2/index.jpg: pedidos2.jpg
 pierna.jpg: pierna.jpg
 pierna/index.jpg: pierna.jpg
 pierna_product.jpg: pierna_product.jpg
@@ -89,6 +91,8 @@ receta_4.jpg: receta_4.jpg
 receta_4/index.jpg: receta_4.jpg
 recetario.jpg: recetario.jpg
 recetario/index.jpg: recetario.jpg
+recomendaciones2.jpg: recomendaciones2.jpg
+recomendaciones2/index.jpg: recomendaciones2.jpg
 recomendations.jpg: recomendations.jpg
 recomendations/index.jpg: recomendations.jpg
 sabias.jpg: sabias.jpg
@@ -105,6 +109,8 @@ sobres_product.jpg: sobres_product.jpg
 sobres_product/index.jpg: sobres_product.jpg
 somos.jpg: somos.jpg
 somos/index.jpg: somos.jpg
+somos2.jpg: somos2.jpg
+somos2/index.jpg: somos2.jpg
 spain.png: spain.png
 spain/index.png: spain.png
 tel.png: tel.png
