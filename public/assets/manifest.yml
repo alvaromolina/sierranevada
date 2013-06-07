@@ -3,8 +3,12 @@ JAMON-EN-LONJAS-3.jpg: JAMON-EN-LONJAS-3.jpg
 JAMON-EN-LONJAS-3/index.jpg: JAMON-EN-LONJAS-3.jpg
 LOMO-EN-LONJAS-3.jpg: LOMO-EN-LONJAS-3.jpg
 LOMO-EN-LONJAS-3/index.jpg: LOMO-EN-LONJAS-3.jpg
+LOMO-FONDO-BLANCO.jpg: LOMO-FONDO-BLANCO.jpg
+LOMO-FONDO-BLANCO/index.jpg: LOMO-FONDO-BLANCO.jpg
 LOMOS-COLGANDO.jpg: LOMOS-COLGANDO.jpg
 LOMOS-COLGANDO/index.jpg: LOMOS-COLGANDO.jpg
+PATA-DEL-JAMON-EN-PEDESTAL.jpg: PATA-DEL-JAMON-EN-PEDESTAL.jpg
+PATA-DEL-JAMON-EN-PEDESTAL/index.jpg: PATA-DEL-JAMON-EN-PEDESTAL.jpg
 PATAS-COLGANDO-2.jpg: PATAS-COLGANDO-2.jpg
 PATAS-COLGANDO-2/index.jpg: PATAS-COLGANDO-2.jpg
 PATAS-COLGANDO.jpg: PATAS-COLGANDO.jpg
@@ -19,6 +23,8 @@ bg.gif: bg.gif
 bg/index.gif: bg.gif
 bg.jpg: bg.jpg
 bg/index.jpg: bg.jpg
+bg2.jpg: bg2.jpg
+bg2/index.jpg: bg2.jpg
 cel.png: cel.png
 cel/index.png: cel.png
 confirmacion.jpg: confirmacion.jpg
