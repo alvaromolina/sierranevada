@@ -56,15 +56,23 @@
          -o-background-size: 100% 100%;           /* Opera 9.5 */
     -webkit-background-size: 100% 100%;           /* Safari 3.0 */
             background-size: 100% 100%;
-        min-height: 150px;
+        min-height: 100px;
         color: white;
       }
-
-
       .second {
         background-color: #18381e;
       }
+      .nabar
+      {
+        width: auto 9;
+        position:fixed;
+        top: 5px;
+        z-index: 1031;
+        display: inline-block;
+        vertical-align: middle;
+        white-space: nowrap;
 
+      }
    /* .navbar-inverse .navbar-inner {
       background-color: #d7a701;
     background-color: #d7a701;
@@ -88,9 +96,32 @@ border-color: #252525;
     } */
     #scroller {
     position: relative;
-    top: 4px;
+    top: 15px;
     width: 100%;
+    max-width: 700px;
     }
+
+a.button {
+    background: #080 url(/assets/menu_inicio.png);
+    width: 25.522%;
+}
+
+a.button:hover {
+    background: #0f0 url(assets/menu_inicio.png);
+    width: 25.522%;
+}
+
+a.button.active {
+    background: #a00 url(assets/menu_inicio.png);
+    width: 25.522%;
+}
+
+
+a.button.active:hover { 
+    background: #f00 url(assets/menu_inicio.png);
+    width: 25.522%;
+}
+
     </style>
 
   </head>
@@ -119,9 +150,35 @@ border-color: #252525;
 
 <div class="container">
   <div class="row">
-    <div class="span10 offset1">
+      <div class="btn-group nabar span10 offset1">
+        <a href="/">
+          <img style="width: 25.522%" src="/assets/logosierra.png">
+        </a>
+        <a href="/">
+          <img class="hoverImage" id="menu_inicio" style="width: 7.322%" src="/assets/menu_inicio.png">
+        </a>
+        <a href="/#productos">
+          <img class="hoverImage" id="menu_producto"  style="width: 10.712%" src="/assets/menu_producto.png">
+        </a>
+        <a href="/#recetario">
+          <img class="hoverImage" id="menu_recetario" style="width: 10.022%" src="/assets/menu_recetario.png">
+        </a>
+        <a href="/#sabias">
+          <img class="hoverImage" id="menu_sabias" style="width: 11.53%" src="/assets/menu_sabias.png">
+        </a>
+        <a href="/#quienes">
+          <img class="hoverImage" id="menu_quienes" style="width: 15.802%" src="/assets/menu_quienes.png">
+        </a>
+        <a href="/#contacto">
+          <img class="hoverImage" id="menu_contacto" style="width: 10.232%" src="/assets/menu_contacto.png">
+        </a>
+        <a href="/pedido">
+          <img class="hoverImage2" id="menu_pedidos" style="width: 8.812%" src="/assets/menu_pedidos.png">
+        </a>
+      </div>
+      <!--
       <img class="navbar navbar-fixed-top span10 offset1" style="left: 105px;" src= "/assets/menu2-01.png">
-    </div>
+      -->
   </div>
   
 
@@ -186,6 +243,43 @@ border-color: #252525;
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
+<script>
+$("img.hoverImage").mouseover(function(){
+  if ($(this).is('.activeImage')) return;
+  var src = "/assets/"+$(this).attr("id")+ "_hover.png";
+  $(this).attr("src", src);
+}).mouseout(function(){
+  if ($(this).is('.activeImage')) return; // Skip mouseout for active image
+  var src = "/assets/"+$(this).attr("id")+ ".png";
+  $(this).attr("src", src);
+}).click(function(){
 
+  // remove previous active state
+  var src = "/assets/"+$('.activeImage').not(this).attr("id")+".png";
+  $('.activeImage').not(this).attr("src", src);
+  $('.activeImage').not(this).removeClass('activeImage').trigger('mouseout');
+  // set new active state
+  var src = "/assets/"+$(this).attr("id")+"_active.png";
+  $(this).attr("src", src);
+
+  $(this).addClass('activeImage');
+  return true;
+});
+</script>
+
+<script>
+$("img.hoverImage2").mouseover(function(){
+  if ($(this).is('.activeImage')) return;
+  var src = "/assets/"+$(this).attr("id")+ "_hover.png";
+  $(this).attr("src", src);
+}).mouseout(function(){
+  if ($(this).is('.activeImage')) return; // Skip mouseout for active image
+  var src = "/assets/"+$(this).attr("id")+ ".png";
+  $(this).attr("src", src);
+}).click(function(){
+
+  return true;
+});
+</script>
   </body>
 </html>
