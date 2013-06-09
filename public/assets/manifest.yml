@@ -109,6 +109,8 @@ pierna_product.jpg: pierna_product.jpg
 pierna_product/index.jpg: pierna_product.jpg
 presione.jpg: presione.jpg
 presione/index.jpg: presione.jpg
+promocion.png: promocion.png
+promocion/index.png: promocion.png
 rails.png: rails.png
 rails/index.png: rails.png
 receta_1.jpg: receta_1.jpg
