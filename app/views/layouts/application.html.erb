@@ -245,6 +245,28 @@ border-color: #252525;
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
 <script>
+function preloader() {
+  if (document.images) {
+    var img1 = new Image();
+    var img2 = new Image();
+    var img3 = new Image();
+    var img4 = new Image();
+    var img5 = new Image();
+    var img6 = new Image();
+    var img7 = new Image();
+
+    img1.src = "/assets/menu_inicio_hover.png";
+    img2.src = "/assets/menu_producto_hover.png";
+    img3.src = "/assets/menu_recetario_hover.png";
+    img4.src = "/assets/menu_sabias_hover.png";
+    img5.src = "/assets/menu_quienes_hover.png";
+    img6.src = "/assets/menu_contacto_hover.png";
+    img7.src = "/assets/menu_pedidos_hover.png";
+
+  }
+}
+
+preloader();
 
 $(document).ready(function() {
 
