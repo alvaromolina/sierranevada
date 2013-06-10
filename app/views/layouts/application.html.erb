@@ -125,19 +125,19 @@ border-color: #252525;
         <a href="/#inicio" >
           <img class="hoverImage" id="menu_inicio" style="width: 7.322%" src="/assets/menu_inicio.png" onError="this.src = '/assets/menu_inicio.png'">
         </a>
-        <a href="/#productos" class="menu_slide">
+        <a href="/#productos" <%= request.fullpath == '/' ? 'class="menu_slide"' : '' %>>
           <img class="hoverImage" id="menu_producto"  style="width: 10.712%" src="/assets/menu_producto.png" onError="this.src = '/assets/menu_producto.png'">
         </a>
-        <a href="/#recetario" class="menu_slide">
+        <a href="/#recetario" <%= request.fullpath == '/' ? 'class="menu_slide"' : '' %>>
           <img class="hoverImage" id="menu_recetario" style="width: 10.022%" src="/assets/menu_recetario.png" onError="this.src = '/assets/menu_recetario.png'">
         </a>
-        <a href="/#sabias" class="menu_slide">
+        <a href="/#sabias" <%= request.fullpath == '/' ? 'class="menu_slide"' : '' %>>
           <img class="hoverImage" id="menu_sabias" style="width: 11.53%" src="/assets/menu_sabias.png" onError="this.src ='/assets/menu_sabias.png'">
         </a>
-        <a href="/#quienes" class="menu_slide">
+        <a href="/#quienes" <%= request.fullpath == '/' ? 'class="menu_slide"' : '' %>>
           <img class="hoverImage" id="menu_quienes" style="width: 15.802%" src="/assets/menu_quienes.png" onError="this.src = '/assets/menu_quienes.png'">
         </a>
-        <a href="/#contacto" class="menu_slide">
+        <a href="/#contacto" <%= request.fullpath == '/' ? 'class="menu_slide"' : '' %>>
           <img class="hoverImage" id="menu_contacto" style="width: 10.232%" src="/assets/menu_contacto.png" onError="this.src = '/assets/menu_contacto.png'">
         </a>
         <a href="/pedido">
@@ -279,7 +279,6 @@ $(document).ready(function() {
             scrollTop: $(id).offset().top+102},
             'slow');
     }
-
     $(".menu_slide").click(function(e) {
         e.preventDefault();
         goToByScroll($(this).attr("href"));           
