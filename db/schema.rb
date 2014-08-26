@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140826021155) do
+ActiveRecord::Schema.define(:version => 20140826025130) do
 
   create_table "contacts", :force => true do |t|
     t.string   "name"
@@ -61,6 +61,8 @@ ActiveRecord::Schema.define(:version => 20140826021155) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.text     "message"
+    t.boolean  "lomo"
+    t.integer  "lomo_units"
   end
 
 end

@@ -1,3 +1,20 @@
+<script type="text/javascript">
+
+  $(document).ready(function() {
+
+    $('#principal').submit(function() {
+      $('#order_leg5').val($('#order_leg5_1').is(':checked'));
+      $('#order_leg6').val($('#order_leg6_1').is(':checked'));
+      $('#order_leg7').val($('#order_leg7_1').is(':checked'));
+      $('#order_desh').val($('#order_desh_1').is(':checked'));
+      $('#order_units').val($('#order_units_1').val());
+      $('#order_lomo').val($('#order_lomo_1').is(':checked'));
+      $('#order_lomo_units').val($('#order_lomo_units_1').val());
+    });
+
+  });
+</script>
+
 <style>
   .form-horizontal .control-label {
     text-align: left;
@@ -55,35 +72,31 @@
             <div class="control-group">
               <label class="control-label" for="inputPassword">PIERNA 5 a 5,9 KILOS</label>
               <div class="controls">
-                <%= f.check_box :leg5 %>
-  
+                <input id="order_leg5_1" name="order[leg5]" type="checkbox" value="1">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="inputPassword">PIERNA 6 a 6,9 KILOS</label>
               <div class="controls">
-                <%= f.check_box :leg6 %>
+                <input id="order_leg6_1" name="order[leg5]" type="checkbox" value="1">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="inputPassword">PIERNA 7 a 7.5 KILOS</label>
               <div class="controls">
-                <%= f.check_box :leg7 %>
+                <input id="order_leg7_1" name="order[leg5]" type="checkbox" value="1">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="inputPassword">DESHUESADO</label>
               <div class="controls">
-                <%= f.check_box :desh %>
+                <input id="order_desh_1" name="order[leg5]" type="checkbox" value="1">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="inputEmail">Unidades</label>
               <div class="controls">
-
-                <%= f.text_field :units, :class => "span1" %>
-
-    
+                  <input class="span1" id="order_units_1" name="order[units]" size="30" type="text">
               </div>
             </div>
               <br>
@@ -105,13 +118,13 @@
             <div class="control-group">
               <label class="control-label" for="inputPassword">LOMO 0.5 KILOS</label>
               <div class="controls">
-                <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="option1" >         
+                <input id="order_lomo_1" name="order[lomo]" type="checkbox" value="1">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="inputEmail">Unidades</label>
               <div class="controls">
-                <input type="text" id="inputEmail" class="span1">
+                  <input class="span1" id="order_lomo_units_1" name="order[lomo_units]" size="30" type="text">
               </div>
             </div>
               <br>
@@ -158,7 +171,16 @@
     <div class="span10 offset1" style="background-color: #f5f5f5;">
     	<div class="row">
 
-        <%= form_for(@order, :html =>  {:class => "form-horizontal"}) do |f| %>
+        <%= form_for(@order, :html =>  {:id=> "principal", :class => "form-horizontal"}) do |f| %>
+
+        <%= f.hidden_field :leg5 %>
+        <%= f.hidden_field :leg6 %>
+        <%= f.hidden_field :leg7 %>
+        <%= f.hidden_field :desh %>
+        <%= f.hidden_field :units %>
+        <%= f.hidden_field :lomo %>
+        <%= f.hidden_field :lomo_units %>
+
     		<div class="span5" style="background-color: #f5f5f5;">
           <div class="control-group">
             <label class="control-label" for="nombre">*Nombre</label>

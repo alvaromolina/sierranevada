@@ -37,7 +37,7 @@ $(document).ready(function() {
     <td><%= contact.phone %></td>
     <td><%= contact.email %></td>
     <td><%= contact.message %></td>
-    <td><%= contact.created_at %></td>
+    <td><%= contact.created_at.in_time_zone('La Paz') %></td>
   </tr>
 <% end %>
 </table>
