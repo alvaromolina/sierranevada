@@ -9,7 +9,7 @@ gem 'sqlite3'
 gem 'twitter-bootstrap-rails'
 gem 'therubyracer'
 gem 'puma'
-
+gem 'devise'
 
 group :development do
     gem 'capistrano'

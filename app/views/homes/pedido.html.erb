@@ -21,7 +21,6 @@
       <img src="/assets/pedidos3.jpg">
     </div>
   </div>
-
   <div class="row">
     <div class="span10 offset1"  style="background-color: #f5f5f5;">
       <img src="/assets/line.jpg">
@@ -50,40 +49,46 @@
 
         <br>
         <br>
-          <form class="form-horizontal">
+          <%= form_for(@order, :html =>  {:class => "form-horizontal"}) do |f| %>
+
+          <br>
             <div class="control-group">
               <label class="control-label" for="inputPassword">PIERNA 5 a 5,9 KILOS</label>
               <div class="controls">
-                <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1">         
+                <%= f.check_box :leg5 %>
+  
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="inputPassword">PIERNA 6 a 6,9 KILOS</label>
               <div class="controls">
-                <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option1" >         
+                <%= f.check_box :leg6 %>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="inputPassword">PIERNA 7 a 7.5 KILOS</label>
               <div class="controls">
-                <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="option1" >         
+                <%= f.check_box :leg7 %>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="inputPassword">DESHUESADO</label>
               <div class="controls">
-                <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="option1" >         
+                <%= f.check_box :desh %>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="inputEmail">Unidades</label>
               <div class="controls">
-                <input type="text" id="inputEmail" class="span1">
+
+                <%= f.text_field :units, :class => "span1" %>
+
+    
               </div>
             </div>
               <br>
               <br>
-          </form>
+          <% end %>
         </div>
         <div class="span5">
           <img src="/assets/PATA-DEL-JAMON-EN-PEDESTAL.jpg"   alt="">
@@ -94,7 +99,7 @@
         <div class="row">
         <div class="span1"> &nbsp;</div>
         <div class="span4" style="background-color: #f5f5f5;">
-          <form class="form-horizontal">
+            <%= form_for(@order, :html =>  {:class => "form-horizontal"}) do |f| %>
             <br>
             <br>
             <div class="control-group">
@@ -111,7 +116,7 @@
             </div>
               <br>
               <br>
-          </form>
+          <% end %>
         </div>
         <div class="span5">
           <img src="/assets/LOMO-FONDO-BLANCO.jpg"   alt="">
@@ -152,38 +157,38 @@
   <div class="row" >
     <div class="span10 offset1" style="background-color: #f5f5f5;">
     	<div class="row">
-          <form class="form-horizontal">
 
+        <%= form_for(@order, :html =>  {:class => "form-horizontal"}) do |f| %>
     		<div class="span5" style="background-color: #f5f5f5;">
-
           <div class="control-group">
             <label class="control-label" for="nombre">*Nombre</label>
             <div class="controls">
-              <input type="text" id="nombre" placeholder="Nombre">
+              <%= f.text_field :name, :placeholder => "Nombre" %>
             </div>
           </div>
           <div class="control-group">
             <label class="control-label" for="empresa">Empresa o negocio</label>
             <div class="controls">
-              <input type="text" id="empresa" placeholder="empresa">
+              <%= f.text_field :company, :placeholder => "Empresa" %>
             </div>
           </div>
           <div class="control-group">
             <label class="control-label" for="ciudad">*Ciudad</label>
             <div class="controls">
-              <input type="text" id="ciudad" placeholder="ciudad">
+              <%= f.text_field :city, :placeholder => "Ciudad" %>
             </div>
           </div>
           <div class="control-group">
             <label class="control-label" for="telefono">*Telefono</label>
             <div class="controls">
-              <input type="text" id="telefono" placeholder="telefono">
+              <%= f.text_field :phone, :placeholder => "Telefono" %>
+
             </div>
           </div>
           <div class="control-group">
             <label class="control-label" for="email">*Email</label>
             <div class="controls">
-              <input type="text" id="email" placeholder="Email">
+              <%= f.text_field :email, :placeholder => "Email" %>
             </div>
           </div>
         <div class="control-group">
@@ -207,14 +212,16 @@
 				<div class="control-group">
 				  <textarea style="width: 70%;" rows="6"></textarea>
 				</div>
-    			<img src="/assets/presione.jpg">
-	            <div class="control-group">
-	            <div class="controls">
-	              <a href="/confirmar#pedidos" class="btn btn-success btn-large">Enviar</a>
-	            </div>
-	          	</div>
+                  <img src="/assets/presione.jpg">
+              <div class="control-group">
+              <div class="controls">
+                <button type="submit" class="btn btn-success btn-large">Enviar</button>
+              </div>
+              </div>
     		</div>
-    		</form>
+        <% end %>
+
+
 
 		</div>
     </div>

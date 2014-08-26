@@ -1,4 +1,12 @@
 Sierranevada::Application.routes.draw do
+  resources :orders
+
+
+  resources :contacts
+
+
+  devise_for :models
+
   resources :homes
   root :to => 'homes#index'
 

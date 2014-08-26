@@ -1,0 +1,58 @@
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#transaction').dataTable(  {
+    'asStripeClasses': [],
+    "iDisplayLength": 50,
+    "aaSorting": [[ 1, "desc" ]],
+    "oLanguage": {
+      "oPaginate": {
+        "sFirst": "Primera pagina",
+        "sNext": "Siguiente",
+      "sPrevious": "Previo",
+      "sSearch": "Buscar:"
+      }
+    }
+    }
+  );
+} );
+</script>
+
+<h1>Listing orders</h1>
+
+<table class="table table table-striped" id="transaction">
+  <thead>  
+    <tr>
+    <th>Leg5</th>
+    <th>Leg6</th>
+    <th>Leg7</th>
+    <th>Desh</th>
+    <th>Unidades</th>
+    <th>Nombre</th>
+    <th>Empresa</th>
+    <th>Ciudad</th>
+    <th>Telefono</th>
+    <th>Email</th>
+    <th>Tipo Pago</th>
+    <th>Fecha</th>
+  </tr>
+  </thead>  
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.leg5 %></td>
+    <td><%= order.leg6 %></td>
+    <td><%= order.leg7 %></td>
+    <td><%= order.desh %></td>
+    <td><%= order.units %></td>
+    <td><%= order.name %></td>
+    <td><%= order.company %></td>
+    <td><%= order.city %></td>
+    <td><%= order.phone %></td>
+    <td><%= order.email %></td>
+    <td><%= order.payment %></td>
+    <td><%= order.created_at %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

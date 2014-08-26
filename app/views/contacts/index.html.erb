@@ -1,0 +1,45 @@
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#transaction').dataTable(  {
+    'asStripeClasses': [],
+    "iDisplayLength": 50,
+    "aaSorting": [[ 5, "desc" ]],
+    "oLanguage": {
+      "oPaginate": {
+        "sFirst": "Primera pagina",
+        "sNext": "Siguiente",
+      "sPrevious": "Previo",
+      "sSearch": "Buscar:"
+      }
+    }
+    }
+  );
+} );
+</script>
+<h1>Contactos</h1>
+<table class="table table table-striped" id="transaction">
+  <thead>
+
+  <tr>
+    <th>Nombre</th>
+    <th>Empresa</th>
+    <th>Telefono</th>
+    <th>Email</th>
+    <th>Mensaje</th>
+    <th>Fecha</th>
+  </tr>
+
+  </thead>
+<% @contacts.each do |contact| %>
+  <tr>
+    <td><%= contact.name %></td>
+    <td><%= contact.company %></td>
+    <td><%= contact.phone %></td>
+    <td><%= contact.email %></td>
+    <td><%= contact.message %></td>
+    <td><%= contact.created_at %></td>
+  </tr>
+<% end %>
+</table>
+<br/>
+

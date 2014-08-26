@@ -394,33 +394,49 @@
         <br>
         <br>
         <br><br><br><br>
-        <form class="form-horizontal" >
+
+
+        <%= form_for(@contact , :html =>  {:class => "form-horizontal"}) do |f| %>
+          <% if @contact.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+              <ul>
+              <% @contact.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <%= bootstrap_flash %>
+
           <div class="control-group ">
             <label class="control-label" for="nombre" style="font-family: 'arial'; font-size: 16px; text-align: left;">*Nombre</label>
             <div class="controls">
-              <input type="text" id="nombre" placeholder="Nombre">
+              <%= f.text_field :name, :placeholder => "Nombre" %>
             </div>
           </div>
           <div class="control-group">
             <label class="control-label" for="empresa" style="font-family: 'arial'; font-size: 16px; text-align: left;">Empresa o negocio</label>
             <div class="controls">
-              <input type="text" id="empresa" placeholder="empresa">
+              <%= f.text_field :company, :placeholder => "Empresa" %>
             </div>
           </div>
           <div class="control-group">
-            <label class="control-label" for="telefono" style="font-family: 'arial'; font-size: 16px; text-align: left;">Telefono</label>
+            <label class="control-label" for="telefono" style="font-family: 'arial'; font-size: 16px; text-align: left;">Tel&eacute;fono</label>
             <div class="controls">
-              <input type="text" id="telefono" placeholder="telefono">
+              <%= f.text_field :phone, :placeholder => "Telefono" %>
             </div>
           </div>
           <div class="control-group">
             <label class="control-label" for="email" style="font-family: 'arial'; font-size: 16px; text-align: left;">*Email</label>
             <div class="controls">
-              <input type="text" id="email" placeholder="Email">
+              <%= f.text_field :email, :placeholder => "Email" %>
             </div>
           </div>
           <div class="control-group">
-              <textarea style="width: 82%;" rows="6"></textarea>
+              <%= f.text_area :message, :rows=> "6", :style=>'width: 82%;' %>
           </div>
           <div class="control-group">
             <div class="controls">
@@ -430,7 +446,7 @@
           <div class="control-group">
             <p>* Obligatorio</p>
           </div>
-        </form>
+        <% end %>
       </div>
   </div>
   <div class="row">

@@ -3,7 +3,7 @@ class HomesController < ApplicationController
   # GET /homes.json
   def index
     @homes = Home.all
-    puts params
+    @contact = Contact.new
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @homes }
@@ -11,7 +11,7 @@ class HomesController < ApplicationController
   end
 
   def pedido
-
+    @order = Order.new
 
   end
 

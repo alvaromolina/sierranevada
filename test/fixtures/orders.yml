@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  leg5: 
+  leg6: 
+  leg7: 
+  desh: 
+  units: 1
+  name: MyString
+  company: MyString
+  city: MyString
+  phone: MyString
+  email: MyString
+  payment: MyString
+
+two:
+  leg5: 
+  leg6: 
+  leg7: 
+  desh: 
+  units: 1
+  name: MyString
+  company: MyString
+  city: MyString
+  phone: MyString
+  email: MyString
+  payment: MyString
