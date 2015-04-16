@@ -15,13 +15,13 @@ set :keep_releases, 3
 set :deploy_to, "/var/www/sierranevada"
 
 # Target ruby version
-set :rvm_ruby_string, '2.0.0'
+#set :rvm_ruby_string, '2.0.0'
  
 # System-wide RVM installation
-set :rvm_type, :system
+#set :rvm_type, :system
  
 # We use sudo (root) for system-wide RVM installation
-set :rvm_install_with_sudo, true
+#set :rvm_install_with_sudo, true
 
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
