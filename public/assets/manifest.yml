@@ -33,8 +33,10 @@ cel.png: cel-6b9aa8f62198a82b89bc4ed847878001.png
 cel/index.png: cel-6b9aa8f62198a82b89bc4ed847878001.png
 confirmacion.png: confirmacion-244dfdf3e9dcae709d96ff47b59447ee.png
 confirmacion/index.png: confirmacion-244dfdf3e9dcae709d96ff47b59447ee.png
-contacto1.png: contacto1-4756f82f3f4bed58da9af8a2ce5264ca.png
-contacto1/index.png: contacto1-4756f82f3f4bed58da9af8a2ce5264ca.png
+contacto1.png: contacto1-ba83bfa86fa570e1af672cbb74e1051f.png
+contacto1/index.png: contacto1-ba83bfa86fa570e1af672cbb74e1051f.png
+contacto1.psd: contacto1-04429f3f85daf396a80d0a5f752b5215.psd
+contacto1/index.psd: contacto1-04429f3f85daf396a80d0a5f752b5215.psd
 contacto4.png: contacto4-7943f52490035d642266dfd4e8df2cbb.png
 contacto4/index.png: contacto4-7943f52490035d642266dfd4e8df2cbb.png
 corte y elaboracion.psd: corte y elaboracion-6afed9b70f1b760468e7f436c37dc1f4.psd
@@ -57,6 +59,8 @@ historia.png: historia-45a077c37d9bfce4456288286899fea3.png
 historia/index.png: historia-45a077c37d9bfce4456288286899fea3.png
 historia1.png: historia1-0484f0ad6e4d68f9436d3086ca186c44.png
 historia1/index.png: historia1-0484f0ad6e4d68f9436d3086ca186c44.png
+historia2.png: historia2-8ba0a68fa26c98fa7bc426c1b8780b2f.png
+historia2/index.png: historia2-8ba0a68fa26c98fa7bc426c1b8780b2f.png
 knife.png: knife-8b1806714fb885e82bc74749b764fa9e.png
 knife/index.png: knife-8b1806714fb885e82bc74749b764fa9e.png
 line.jpg: line-1cd954a39d3619db225e84c03f8e9bf3.jpg
@@ -199,10 +203,16 @@ sabias-que1.png: sabias-que1-f4162477dd3819fb53cb44dc7eda350c.png
 sabias-que1/index.png: sabias-que1-f4162477dd3819fb53cb44dc7eda350c.png
 sabias-que3.png: sabias-que3-647c12d196bd7fceef50931855c43822.png
 sabias-que3/index.png: sabias-que3-647c12d196bd7fceef50931855c43822.png
+sabias1.png: sabias1-c5bea353f04881e93b5d0a66a3256359.png
+sabias1/index.png: sabias1-c5bea353f04881e93b5d0a66a3256359.png
+sabias2.png: sabias2-331e7752c369c07f5b3387dcc8d2990c.png
+sabias2/index.png: sabias2-331e7752c369c07f5b3387dcc8d2990c.png
 sabias4.png: sabias4-472842055a280918e51b4fe7604fa84a.png
 sabias4/index.png: sabias4-472842055a280918e51b4fe7604fa84a.png
 sabiasa.jpg: sabiasa-70b91bd165246683e5a2571f43db6954.jpg
 sabiasa/index.jpg: sabiasa-70b91bd165246683e5a2571f43db6954.jpg
+sabiasque.png: sabiasque-42df8ead3d9cd8b17aef1ab6ad735497.png
+sabiasque/index.png: sabiasque-42df8ead3d9cd8b17aef1ab6ad735497.png
 seleccione.jpg: seleccione-285bee02a624afa7e8ed8212662d9caa.jpg
 seleccione/index.jpg: seleccione-285bee02a624afa7e8ed8212662d9caa.jpg
 sierra1377.jpg: sierra1377-74497c42d72a95106504db17fbf416bf.jpg
@@ -219,6 +229,8 @@ tabla.png: tabla-b5e7e8c8e93afaddc37eed79325887cb.png
 tabla/index.png: tabla-b5e7e8c8e93afaddc37eed79325887cb.png
 tapas.png: tapas-366263bef00dee47eb5544e068dec817.png
 tapas/index.png: tapas-366263bef00dee47eb5544e068dec817.png
+tapas1.png: tapas1-93b4c8a308d8ca86775a1efb996be901.png
+tapas1/index.png: tapas1-93b4c8a308d8ca86775a1efb996be901.png
 tel.png: tel-b9d255cce08a2a46ee746e79e7295f82.png
 tel/index.png: tel-b9d255cce08a2a46ee746e79e7295f82.png
 trecarga1.jpg: trecarga1-4cd2561596b80f42e44e1ccc3db1c6b1.jpg
@@ -227,8 +239,8 @@ uk.png: uk-4fdee4119df7eb227a995c6b28f5c438.png
 uk/index.png: uk-4fdee4119df7eb227a995c6b28f5c438.png
 youtube.png: youtube-1a5e3091d8833cfeaaa524759b3447b6.png
 youtube/index.png: youtube-1a5e3091d8833cfeaaa524759b3447b6.png
-application.js: application-5dacf263a9bf90f91ad3f3f6377f0e7a.js
-application/index.js: application-5dacf263a9bf90f91ad3f3f6377f0e7a.js
+application.js: application-2eb5a9363a5866344d86599a92ab5f20.js
+application/index.js: application-2eb5a9363a5866344d86599a92ab5f20.js
 application.css: application-01780e1cf08fc467414520399232647f.css
 application/index.css: application-01780e1cf08fc467414520399232647f.css
 jquery.min.map: jquery.min-8b58c0fbf303b938d8e749262f7e50dd.map

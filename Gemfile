@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'twitter-bootstrap-rails'
-gem 'therubyracer'
+gem 'therubyracer', :platforms => :ruby
 gem 'puma'
 gem 'devise'
 
