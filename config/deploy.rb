@@ -1,5 +1,5 @@
 require 'bundler/capistrano'
-require "rvm/capistrano"
+#require "rvm/capistrano"
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
@@ -49,9 +49,9 @@ namespace :deploy do
     CMD
   end
 
-  task :set_rvm_version, :roles => :app, :except => { :no_release => true } do
-    run "source /etc/profile.d/rvm.sh && rvm use #{rvm_ruby_string} --default"
-  end
+  #task :set_rvm_version, :roles => :app, :except => { :no_release => true } do
+  #  run "source /etc/profile.d/rvm.sh && rvm use #{rvm_ruby_string} --default"
+  #end
 
   desc "reload the database with seed data"
   task :migrate do
