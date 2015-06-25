@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
 
-  before_filter :authenticate_user!, :only => :create
+  before_filter :authenticate_user!, :except => :create
   # GET /contacts
   # GET /contacts.json
   def index
