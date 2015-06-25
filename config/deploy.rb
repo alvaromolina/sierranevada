@@ -16,7 +16,8 @@ set :deploy_to, "/var/www/sierranevada"
 
 
 set :default_environment, {
-  'PATH' => "/usr/local/rvm/gems/ruby-2.0.0-p643/bin:/usr/local/rvm/gems/ruby-2.0.0-p643@global/bin:/usr/local/rvm/rubies/ruby-2.0.0-p643/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/rvm/bin"
+  'PATH' => "/usr/local/rvm/gems/ruby-2.0.0-p643/bin:/usr/local/rvm/gems/ruby-2.0.0-p643@global/bin:/usr/local/rvm/rubies/ruby-2.0.0-p643/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/rvm/bin",
+  'GEM_PATH' => '/usr/local/rvm/gems/ruby-2.0.0-p643:/usr/local/rvm/gems/ruby-2.0.0-p643@global'
 }
 
 # Target ruby version
