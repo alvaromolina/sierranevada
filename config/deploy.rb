@@ -14,6 +14,11 @@ set :deploy_via, :remote_cache
 set :keep_releases, 3
 set :deploy_to, "/var/www/sierranevada"
 
+
+set :default_environment, {
+  'PATH' => "/usr/local/rvm/gems/ruby-2.0.0-p643/bin:/usr/local/rvm/gems/ruby-2.0.0-p643@global/bin:/usr/local/rvm/rubies/ruby-2.0.0-p643/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/rvm/bin"
+}
+
 # Target ruby version
 #set :rvm_ruby_string, '2.0.0'
  
